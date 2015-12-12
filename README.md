@@ -2,6 +2,8 @@
 
 Removes the accents from a string, converting them to their corresponding non-accented ASCII characters.
 
+[![Build Status](https://travis-ci.org/tyxla/remove-accents.svg)](https://travis-ci.org/tyxla/remove-accents)
+
 ## About
 
 An easy to use solution for converting all accented characters to their corresponding non-accented ASCII characters.
