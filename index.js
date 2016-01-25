@@ -218,7 +218,8 @@ var characterMap = {
 	"Ǽ": "AE",
 	"ǽ": "ae",
 	"Ǿ": "O",
-	"ǿ": "o"
+	"ǿ": "o",
+	"Þ": "TH"
 }
 
 module.exports = removeAccents;
