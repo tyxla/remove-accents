@@ -1,6 +1,6 @@
 {
   "name": "remove-accents",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Converting the accented characters to their corresponding non-accented ASCII characters.",
   "main": "index.js",
   "dependencies": {
