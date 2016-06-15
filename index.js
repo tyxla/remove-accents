@@ -260,7 +260,13 @@ var characterMap = {
 	"Ѓ": "Г",
 	"ѓ": "г",
 	"Ќ": "К",
-	"ќ": "к"
+	"ќ": "к",
+	"A̋": "A",
+	"a̋": "a",
+	"E̋": "E",
+	"e̋": "e",
+	"I̋": "I",
+	"i̋": "i"
 }
 
 module.exports = removeAccents;
