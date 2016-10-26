@@ -41,5 +41,6 @@
     "url": "https://github.com/tyxla/remove-accents/issues"
   },
   "homepage": "https://github.com/tyxla/remove-accents",
-  "license": "MIT"
+  "license": "MIT",
+  "typings": "./index.d.ts"
 }
