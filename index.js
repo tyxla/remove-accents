@@ -1,11 +1,3 @@
-var removeAccents = function(string) {
-	for( accented in characterMap ) {
-		string = string.replace( new RegExp(accented, "g"), characterMap[accented] );
-	}
-
-	return string;
-}
-
 var characterMap = {
 	"À": "A",
 	"Á": "A",
@@ -345,6 +337,28 @@ var characterMap = {
 	"ȑ": "r",
 	"Ȕ": "U",
 	"ȕ": "u",
+}
+
+var accentsRegex;
+
+function buildRegExp() {
+	var accentList = [];
+
+	for( accented in characterMap ) {
+		accentList.push(accented);
+	}
+
+	accentsRegex = new RegExp('(' + accentList.join('|') + ')', 'g');
+}
+
+buildRegExp();
+
+var removeAccents = function(string) {	
+	string = string.replace(accentsRegex, function(match) {
+		return characterMap[match];
+	})
+
+	return string;
 }
 
 module.exports = removeAccents;
