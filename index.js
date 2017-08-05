@@ -406,7 +406,7 @@ var accentsRegex;
 function buildRegExp() {
 	var accentList = [];
 
-	for( accented in characterMap ) {
+	for(var accented in characterMap ) {
 		accentList.push(accented);
 	}
 
