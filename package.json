@@ -1,6 +1,6 @@
 {
   "name": "remove-accents",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Converting the accented characters to their corresponding non-accented ASCII characters.",
   "main": "index.js",
   "dependencies": {
@@ -36,7 +36,8 @@
   },
   "contributors": [
     "tyxla",
-    "andreialecu"
+    "andreialecu",
+    "Soreine"
   ],
   "bugs": {
     "url": "https://github.com/tyxla/remove-accents/issues"
