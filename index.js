@@ -399,7 +399,7 @@ var characterMap = {
 	"x̧": "x",
 	"Z̧": "Z",
 	"z̧": "z",
-}
+};
 
 var accentsRegex;
 
@@ -421,7 +421,7 @@ var removeAccents = function(string) {
 	})
 
 	return string;
-}
+};
 
 var hasAccents = function(string) {
 	return !!string.match(accentsRegex);
