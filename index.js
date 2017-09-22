@@ -420,11 +420,9 @@ function buildRegExp() {
 buildRegExp();
 
 var removeAccents = function(string) {	
-	string = string.replace(allAccents, function(match) {
+	return string.replace(allAccents, function(match) {
 		return characterMap[match];
-	})
-
-	return string;
+	});
 };
 
 var hasAccents = function(string) {
