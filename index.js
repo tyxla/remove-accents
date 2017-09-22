@@ -429,3 +429,4 @@ var hasAccents = function(string) {
 
 module.exports = removeAccents;
 module.exports.has = hasAccents;
+module.exports.remove = removeAccents;
