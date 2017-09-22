@@ -423,4 +423,9 @@ var removeAccents = function(string) {
 	return string;
 }
 
+var hasAccents = function(string) {
+	return !!string.match(accentsRegex);
+};
+
 module.exports = removeAccents;
+module.exports.has = hasAccents;
