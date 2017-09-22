@@ -401,23 +401,9 @@ var characterMap = {
 	"z̧": "z",
 };
 
-var allAccents;
-var firstAccent;
-
-function buildRegExp() {
-	var accentList = [];
-	var chars;
-
-	for(var accented in characterMap ) {
-		accentList.push(accented);
-	}
-
-	chars = accentList.join('|');
-	allAccents = new RegExp(chars, 'g');
-	firstAccent = new RegExp(chars, '');
-}
-
-buildRegExp();
+var chars = Object.keys(characterMap).join('|');
+var allAccents = new RegExp(chars, 'g');
+var firstAccent = new RegExp(chars, '');
 
 var removeAccents = function(string) {	
 	return string.replace(allAccents, function(match) {
