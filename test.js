@@ -19,3 +19,22 @@ tape('do not modify non-accented strings', function(t) {
 
 	t.end();
 });
+
+tape('.has can detect accents', function(t) {
+	t.equal(removeAccents.has('À'), true);
+	t.equal(removeAccents.has('Löwe'), true);
+
+	t.equal(removeAccents.has('A'), false);
+	t.equal(removeAccents.has('Panther'), false);
+
+	t.end();
+});
+
+tape('.remove method', function(t) {
+	t.same(removeAccents.toString(), removeAccents.remove.toString());
+
+	t.same(removeAccents.remove('cat'), 'cat');
+	t.same(removeAccents.remove('Pokémon'), 'Pokemon');
+
+	t.end();
+});

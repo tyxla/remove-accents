@@ -33,6 +33,31 @@ var output = removeAccents(input);
 console.log(output); // AAAAAA
 ```
 
+## Methods
+
+The exported function also has helper methods.
+
+#### has
+
+Determine if a string has any accented characters.
+
+``` js
+var accents = require('remove-accents');
+
+console.log(accents.has('ÀÁÂÃÄÅ')); // true
+console.log(accents.has('ABC'));    // false
+```
+
+#### remove
+
+Alias of `removeAccents`.
+
+``` js
+var accents = require('remove-accents');
+
+console.log(accents.remove('ÀÁÂÃÄÅ')); // AAAAAA
+```
+
 ## License
 
 MIT

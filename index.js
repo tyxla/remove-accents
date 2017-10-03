@@ -399,28 +399,22 @@ var characterMap = {
 	"x̧": "x",
 	"Z̧": "Z",
 	"z̧": "z",
-}
+};
 
-var accentsRegex;
-
-function buildRegExp() {
-	var accentList = [];
-
-	for(var accented in characterMap ) {
-		accentList.push(accented);
-	}
-
-	accentsRegex = new RegExp('(' + accentList.join('|') + ')', 'g');
-}
-
-buildRegExp();
+var chars = Object.keys(characterMap).join('|');
+var allAccents = new RegExp(chars, 'g');
+var firstAccent = new RegExp(chars, '');
 
 var removeAccents = function(string) {	
-	string = string.replace(accentsRegex, function(match) {
+	return string.replace(allAccents, function(match) {
 		return characterMap[match];
-	})
+	});
+};
 
-	return string;
-}
+var hasAccents = function(string) {
+	return !!string.match(firstAccent);
+};
 
 module.exports = removeAccents;
+module.exports.has = hasAccents;
+module.exports.remove = removeAccents;
