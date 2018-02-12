@@ -405,7 +405,7 @@ var allAccents = new RegExp(chars, 'g');
 var firstAccent = new RegExp(chars, '');
 
 function matcher(match) {
-  return characterMap[match];
+	return characterMap[match];
 }
 
 var removeAccents = function(string) {	
