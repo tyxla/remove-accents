@@ -35,6 +35,6 @@ tape('.remove method', function(t) {
 
 	t.same(removeAccents.remove('cat'), 'cat');
 	t.same(removeAccents.remove('Pokémon'), 'Pokemon');
-
+	t.same(removeAccents.remove('Straße'), 'Strasse');
 	t.end();
 });
