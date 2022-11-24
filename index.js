@@ -221,6 +221,7 @@ var characterMap = {
 	"Š": "S",
 	"š": "s",
 	"ṣ": "s",
+	"ß": "ss",
 	"Ţ": "T",
 	"ţ": "t",
 	"ț": "t",
@@ -400,6 +401,10 @@ var characterMap = {
 	"x̧": "x",
 	"Z̧": "Z",
 	"z̧": "z",
+	"й":"и",
+	"Й":"И",
+	"ё":"е",
+	"Ё":"Е",
 };
 
 var chars = Object.keys(characterMap).join('|');
