@@ -7,6 +7,7 @@ npm install remove-accents
 ```
 
 [![Build Status](https://travis-ci.org/tyxla/remove-accents.svg)](https://travis-ci.org/tyxla/remove-accents)
+[![Unit tests](https://github.com/tyxla/remove-accents/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/tyxla/remove-accents/actions/workflows/unit-tests.yml)
 
 ## About
 
