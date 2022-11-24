@@ -11,8 +11,18 @@ tape('remove accents from string', function(t) {
 	t.end();
 });
 
+tape('remove cyrillic accents from string', function(t) {
+	var input = 'ЁёЙй';
+	var output = removeAccents(input);
+	var expected = 'ЕеИи';
+
+	t.same( output, expected );
+
+	t.end();
+});
+
 tape('do not modify non-accented strings', function(t) {
-	var input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789.,:;~`!@#$%^&*()-_=+[]{}\'"|\\<>?/';
+	var input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789.,:;~`!@#$%^&*()-_=+[]{}\'"|\\<>?/eEиИ';
 	var output = removeAccents(input);
 
 	t.same( output, input );
