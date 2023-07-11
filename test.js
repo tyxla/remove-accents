@@ -48,3 +48,9 @@ tape('.remove method', function(t) {
 
 	t.end();
 });
+
+// See https://github.com/tyxla/remove-accents/issues/12
+tape('ß is not accented', function(t) {
+  t.same(removeAccents.remove('Straße'), 'Straße');
+});
+
