@@ -3,7 +3,9 @@
   "version": "0.4.4",
   "description": "Converting the accented characters to their corresponding non-accented ASCII characters.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "regenerate": "^1.4.2"
+  },
   "devDependencies": {
     "tape": "^4.2.2"
   },
