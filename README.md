@@ -15,7 +15,15 @@ An easy to use solution for converting all accented characters to their correspo
 ## Syntax
 
 ``` js
+import removeAccents from 'remove-accents';
+
 removeAccents(inputString)
+```
+
+Alternatively, you could use the CommonJS syntax to import it:
+
+``` js
+const removeAccents = require('remove-accents');
 ```
 
 #### inputString
@@ -27,8 +35,8 @@ The string that you wish to remove accents from.
 Call `removeAccents()` by passing the string you wish to remove accents from, and you will get the non-accented string as result.
 
 ``` js
-var input = 'ÀÁÂÃÄÅ';
-var output = removeAccents(input);
+const input = 'ÀÁÂÃÄÅ';
+const output = removeAccents(input);
 
 console.log(output); // AAAAAA
 ```
@@ -42,10 +50,10 @@ The exported function also has helper methods.
 Determine if a string has any accented characters.
 
 ``` js
-var accents = require('remove-accents');
+import removeAccents from 'remove-accents';
 
-console.log(accents.has('ÀÁÂÃÄÅ')); // true
-console.log(accents.has('ABC'));    // false
+console.log(removeAccents.has('ÀÁÂÃÄÅ')); // true
+console.log(removeAccents.has('ABC'));    // false
 ```
 
 #### remove
@@ -53,9 +61,9 @@ console.log(accents.has('ABC'));    // false
 Alias of `removeAccents`.
 
 ``` js
-var accents = require('remove-accents');
+import removeAccents from 'remove-accents';
 
-console.log(accents.remove('ÀÁÂÃÄÅ')); // AAAAAA
+console.log(removeAccents.remove('ÀÁÂÃÄÅ')); // AAAAAA
 ```
 
 ## License
