@@ -458,6 +458,8 @@ var characterMap = {
 	"Й":"И",
 	"ё":"е",
 	"Ё":"Е",
+	"Ể": "E",
+	"Ễ": "E",
 };
 
 var chars = Object.keys(characterMap).join('|');
